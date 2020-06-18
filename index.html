@@ -6,19 +6,11 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="manifest" href="manifest.json">
+		<script>src="/app.js"</script>
 	</head>
 	<body>
 		<h3>Hello PWA</h3>
 	</body>
 	<script>
-		// 检测浏览器是否支持SW
-		if (navigator.serviceWorker != null) {
-			navigator.serviceWorker.register('sw.js', {scope: './'})
-				.then(function(registartion) {
-					console.log('注册成功');
-				}).catch(function(error) {
-					console.log('注册失败');
-				});
-		}
 	</script>
 </html>
